@@ -1,14 +1,13 @@
 let dice = document.querySelector(".dice");
-let windowsHeight = document.documentElement.clientHeight - dice.clientHeight;
-let windowsWidth = document.documentElement.clientWidth - dice.clientWidth;
-
+let postop = document.documentElement.clientHeight - dice.clientHeight;
+let posleft = document.documentElement.clientWidth - dice.clientWidth;
 
 
 function diceRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function soundClick() {
+function sound() {
     var audio = new Audio();
     audio.src = 'audio/audio.mp3';
     audio.autoplay = true;
@@ -21,7 +20,7 @@ document.addEventListener("click", function () {
         dice.classList.remove("rezult-" + i);
     }
     dice.classList.add("rezult-" + result);
-    dice.style.left = diceRandom(0, windowsWidth) + "px";
-    dice.style.top = diceRandom(0, windowsHeight) + "px";
-    soundClick();
+    dice.style.left = diceRandom(0, posleft) + "px";
+    dice.style.top = diceRandom(0, postop) + "px";
+    sound();
 })
