@@ -1,0 +1,30 @@
+.dice  {
+    height: 128px;
+    width: 128px;
+    position: absolute;
+    background: url(../img/dice.png) no-repeat -11px -8px;
+}
+
+.dice.rezult-1 {
+    background: url(../img/dice.png) no-repeat -11px -8px;
+}
+
+.dice.rezult-2 {
+    background: url(../img/dice.png) no-repeat -187px -8px;
+}
+
+.dice.rezult-3 {
+    background: url(../img/dice.png) no-repeat -364px -8px;
+}
+
+.dice.rezult-4 {
+    background: url(../img/dice.png) no-repeat -540px -8px;
+}
+
+.dice.rezult-5 {
+    background: url(../img/dice.png) no-repeat -715px -8px;
+}
+
+.dice.rezult-6 {
+    background: url(../img/dice.png) no-repeat -893px -8px;
+}
